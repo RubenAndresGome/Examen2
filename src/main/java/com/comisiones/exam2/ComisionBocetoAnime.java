@@ -11,11 +11,17 @@ public class    ComisionBocetoAnime implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private String estrellas="";
+    private String NombreArtista="Rua";
+      @Override
+    public String getNombreArtista() {
+        return NombreArtista;
+    }
+    
    
     
     public ComisionBocetoAnime(){
     UbicacionImagen="IMAGES/bocetitos.jpg";
-    Precio=50.0;
+    Precio=10.0;
     estrellas="";
     this.setEstrellas(3);
     }

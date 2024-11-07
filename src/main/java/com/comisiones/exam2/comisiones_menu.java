@@ -18,5 +18,7 @@ public interface comisiones_menu {
    void setUbicacionImagen(String ubicacion);
    double getPrecio();
    String getEstrellas();
+   public String getNombreArtista();
+    
    
 }

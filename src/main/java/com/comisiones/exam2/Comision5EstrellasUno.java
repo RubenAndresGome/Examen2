@@ -13,11 +13,18 @@ public class    Comision5EstrellasUno implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private String estrellas="";
-   
+    private String NombreArtista="Rua";
+      @Override
+    public String getNombreArtista() {
+        return NombreArtista;
+    }
+    
+    
+    
     
     Comision5EstrellasUno(){
     UbicacionImagen="IMAGES/render_plus_ejemplo.jpg";
-    Precio=50.0;
+    Precio=60.0;
     estrellas="";
     this.setEstrellas(5);
     }

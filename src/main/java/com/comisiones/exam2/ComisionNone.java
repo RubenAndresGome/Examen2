@@ -13,7 +13,14 @@ public class    ComisionNone implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private String estrellas="";
-   
+    private String NombreArtista="Rua";
+    
+    
+    @Override
+    public String getNombreArtista() {
+        return NombreArtista;
+    }
+    
     
     ComisionNone(){
     UbicacionImagen="IMAGES/imagen_vacia.png";

@@ -11,11 +11,16 @@ public class    ComisionArteFisico implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private String estrellas="";
-   
+    private String NombreArtista="Rua";
+      @Override
+    public String getNombreArtista() {
+        return NombreArtista;
+    }
+    
     
     public ComisionArteFisico(){
     UbicacionImagen="IMAGES/arte_fisico.jpg";
-    Precio=50.0;
+    Precio=40.0;
     estrellas="";
     this.setEstrellas(4);
     }
