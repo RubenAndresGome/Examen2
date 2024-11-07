@@ -1,18 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+
 package com.comisiones.exam2;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
 
-/**
- *
- * @author samsu
- */
+
 @Named
 @RequestScoped
-public class    comision_5_estrellas_1 implements comisiones_menu {
+public class    Comision5EstrellasUno implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private int estrellas=5;
