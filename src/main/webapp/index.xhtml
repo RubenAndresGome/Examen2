@@ -35,20 +35,34 @@
     
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="path-to-silu-logo.png" alt="SILU" />
-            </a>
-            <div class="d-flex flex-grow-1 mx-4">
-                <input class="form-control me-2" type="search" placeholder="Busca lo que se te ocurra" />
-            </div>
-            <div>
-                <button class="btn btn-outline-secondary me-2">Entrar</button>
-                <button class="btn"><i class="fas fa-shopping-cart"></i></button>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="path-to-silu-logo.png" alt="SILU" />
+        </a>
+        <div class="d-flex flex-grow-1 mx-4">
+            <input class="form-control me-2" type="search" placeholder="Busca lo que se te ocurra" />
         </div>
-    </nav>
+        <div class="d-flex">
+            <!-- Dropdown Menu -->
+            <div class="dropdown me-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Entrar Button -->
+            <button class="btn btn-outline-secondary me-2">Entrar</button>
+            <!-- Shopping Cart Button -->
+            <button class="btn"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </div>
+</nav>
+
 
     <!-- Main Content -->
     <main class="container my-4">
