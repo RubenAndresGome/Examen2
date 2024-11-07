@@ -7,7 +7,7 @@ import jakarta.inject.Named;
 
 @Named
 @RequestScoped
-public class    Comision5EstrellasUno implements comisiones_menu {
+public class    ComisionNone implements comisiones_menu {
     
     
     private String UbicacionImagen;
@@ -15,9 +15,9 @@ public class    Comision5EstrellasUno implements comisiones_menu {
     private String estrellas="";
    
     
-    Comision5EstrellasUno(){
-    UbicacionImagen="IMAGES/render_plus_ejemplo.jpg";
-    Precio=50.0;
+    ComisionNone(){
+    UbicacionImagen="IMAGES/imagen_vacia.png";
+    Precio=0.0;
     estrellas="";
     this.setEstrellas(5);
     }

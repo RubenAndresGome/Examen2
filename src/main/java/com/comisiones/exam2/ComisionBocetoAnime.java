@@ -7,19 +7,17 @@ import jakarta.inject.Named;
 
 @Named
 @RequestScoped
-public class    Comision5EstrellasUno implements comisiones_menu {
-    
-    
+public class    ComisionBocetoAnime implements comisiones_menu {
     private String UbicacionImagen;
     private double Precio=50.0;
     private String estrellas="";
    
     
-    Comision5EstrellasUno(){
-    UbicacionImagen="IMAGES/render_plus_ejemplo.jpg";
+    public ComisionBocetoAnime(){
+    UbicacionImagen="IMAGES/bocetitos.jpg";
     Precio=50.0;
     estrellas="";
-    this.setEstrellas(5);
+    this.setEstrellas(3);
     }
 
     public String getUbicacionImagen() {
@@ -48,7 +46,6 @@ public class    Comision5EstrellasUno implements comisiones_menu {
         for(int i=estrellas;i>0;i--)s+="★";
         this.estrellas=s;
     }
-
 
 }
 

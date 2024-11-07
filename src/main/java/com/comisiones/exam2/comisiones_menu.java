@@ -17,6 +17,6 @@ public interface comisiones_menu {
    String getUbicacionImagen();
    void setUbicacionImagen(String ubicacion);
    double getPrecio();
-   int getEstrellas();
+   String getEstrellas();
    
 }
