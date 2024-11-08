@@ -7,42 +7,85 @@
     <title>Inicio de Sesión</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
+        body {
+            background-color: #f5f7fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
         .login-container {
             max-width: 400px;
-            margin: auto;
-            padding-top: 50px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333333;
         }
         .social-btn {
             width: 100%;
             text-align: left;
             margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: #f7f8fa;
+            color: #333333;
+            font-weight: 500;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         .social-btn i {
             margin-right: 8px;
         }
+        .form-label {
+            font-weight: bold;
+            color: #555555;
+        }
+        .form-control {
+            border-radius: 8px;
+        }
+        .btn-primary {
+            background-color: #0069d9;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        a {
+            color: #0069d9;
+        }
+        a:hover {
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <div class="container login-container">
-        <h1 class="text-center">INICIA SESIÓN</h1>
+    <div class="login-container">
+        <h1>INICIA SESIÓN</h1>
         
         <!-- Icono de usuario -->
         <div class="text-center my-4">
-            <i class="fas fa-user-circle" style="font-size: 50px;"></i>
+            <i class="fas fa-user-circle" style="font-size: 50px; color: #555555;"></i>
         </div>
         
         <!-- Formulario de inicio de sesión -->
         <h:form>
             <div class="mb-3">
-                <label for="email" class="form-label fw-bold">CORREO ELECTRÓNICO</label>
-                <h:inputText id="email" value="#{loginBean.email}" class="form-control">
+                <label for="email" class="form-label">CORREO ELECTRÓNICO</label>
+                <h:inputText id="email" value="#{loginBean.email}" class="form-control" style="padding: 10px;">
                     <f:passThroughAttribute name="placeholder" value="Example@gmail.com" />
                 </h:inputText>
             </div>
 
             <div class="mb-3">
-                <label for="password" class="form-label fw-bold">CONTRASEÑA</label>
-                <h:inputSecret id="password" value="#{loginBean.password}" class="form-control">
+                <label for="password" class="form-label">CONTRASEÑA</label>
+                <h:inputSecret id="password" value="#{loginBean.password}" class="form-control" style="padding: 10px;">
                     <f:passThroughAttribute name="placeholder" value="********" />
                 </h:inputSecret>
             </div>
@@ -61,13 +104,13 @@
 
         <!-- Botones de redes sociales -->
         <div class="mt-4">
-            <button class="btn btn-light social-btn">
+            <button class="btn social-btn">
                 <i class="fab fa-google"></i> Inicia sesión con Google
             </button>
-            <button class="btn btn-light social-btn">
+            <button class="btn social-btn">
                 <i class="fab fa-facebook"></i> Inicia sesión con Facebook
             </button>
-            <button class="btn btn-light social-btn">
+            <button class="btn social-btn">
                 <i class="fab fa-apple"></i> Inicia sesión con Apple
             </button>
         </div>
