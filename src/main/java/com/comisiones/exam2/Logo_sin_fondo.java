@@ -2,13 +2,20 @@
 
 
 package com.comisiones.exam2;
+import jakarta.annotation.ManagedBean;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.SessionScoped;
 import jakarta.inject.Named;
 
-@Named
-@RequestScoped
-public class Logo_sin_fondo implements imagenes_index {
-    private String Ubicacion="IMAGES/logo_sin_fondo.png";
+/**
+ *
+ * @author samsu
+ */
+@Named("logo_sin_fondo")
+@ApplicationScoped
+public  class Logo_sin_fondo implements imagenes_index {
+    private String Ubicacion="./IMAGES/logo_sin_fondo.png";
     private String Descripcion="SILU";
     private String Comentario="";
     
