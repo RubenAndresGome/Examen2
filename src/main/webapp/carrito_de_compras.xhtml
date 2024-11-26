@@ -77,35 +77,43 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./IMAGES/logo_sin_fondo.png" alt="Logo"  style="width: 50px; height: 50px;" />
-            </a>
-            <div class="d-flex flex-grow-1 mx-4">
-                <input class="form-control me-2" type="search" placeholder="Busca lo que se te ocurra" />
-            </div>
-            <div class="d-flex">
-                <!-- Dropdown Menu -->
-                <div class="dropdown me-2">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Menú
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="centro_de_ayuda.xhtml">Centro De Ayuda</a></li>
-                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
-                    </ul>
-                </div>
-                <!-- Entrar Button -->
-                <a class="btn btn-outline-secondary me-2" href="#{login.ubicacion}">Entrar</a>
-
-                <!-- Shopping Cart Button -->
-                <a class="btn" href="carrito_de_compras.xhtml"><i class="fas fa-shopping-cart"></i></a>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./IMAGES/logo_sin_fondo.png" alt="Logo"  style="width: 50px; height: 50px;" />
+            
+        </a>
+        <div class="d-flex flex-grow-1 mx-4">
+            <input class="form-control me-2" type="search" placeholder="Busca lo que se te ocurra" />
         </div>
-    </nav>
+        <div class="d-flex">
+            <!-- Dropdown Menu -->
+            <div class="dropdown me-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="centro_de_ayuda.xhtml">Centro De Ayuda</a></li>
+                    <li><a class="dropdown-item" href="politicas_y_privacidad.xhtml">Polticas y privacidad</a></li>
+                    
+                        <li><a class="dropdown-item" href="plantilla.xhtml">Opción 3</a></li>
+                        <li><a class="dropdown-item" href="plantilla.xhtml">Opción 3</a></li>
+                        <li><a class="dropdown-item" href="plantilla.xhtml">Opción 3</a></li>
+                    
+                        <li><a class="dropdown-item" href="plantilla.xhtml">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Entrar Button -->
+            <a class="btn btn-outline-secondary me-2" href="login.xhtml">Entrar</a>
+
+            <!-- Shopping Cart Button -->
+            <a class="btn"   href="carrito_de_compras.xhtml" ><i class="fas fa-shopping-cart"></i>
+               
+            </a>
+        </div>
+    </div>
+</nav>
+
 
     <!-- Carrito de compras -->
     <div class="container my-5">
@@ -125,7 +133,7 @@
                 </div>
                 <!-- Producto 2 -->
                 <div class="cart-item">
-                    <img src="./IMAGES/logo_sin_fondo.png" alt="Producto 2" />
+                    <img src="IMAGES/logo_sin_fondo.png" alt="Producto 2" />
                     <div class="details">
                         <p class="title">#{producto2.getNombre()}</p>
                         <p class="text-muted">Cantidad: #{producto2.getCantidad()}</p>

@@ -4,6 +4,7 @@
  */
 package com.comisiones.exam2;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
 

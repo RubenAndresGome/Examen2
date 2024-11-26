@@ -1,7 +1,9 @@
 
 
 package com.comisiones.exam2;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
+//import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
 
 
@@ -19,7 +21,7 @@ public class    ComisionArteFisico implements comisiones_menu {
     
     
     public ComisionArteFisico(){
-    UbicacionImagen="IMAGES/arte_fisico.jpg";
+    UbicacionImagen="./IMAGES/arte_fisico.jpg";
     Precio=40.0;
     estrellas="";
     this.setEstrellas(4);

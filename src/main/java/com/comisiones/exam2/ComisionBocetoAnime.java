@@ -1,6 +1,7 @@
 
 
 package com.comisiones.exam2;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
 
@@ -29,7 +30,7 @@ public class    ComisionBocetoAnime implements comisiones_menu {
     public String getUbicacionImagen() {
         return UbicacionImagen;
     }
-
+    
     public void setUbicacionImagen(String Ubicacion) {
         this.UbicacionImagen = Ubicacion;
     }

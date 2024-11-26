@@ -13,11 +13,11 @@ import jakarta.inject.Named;
  * @author samsu
  */
 @Named("logo_sin_fondo")
-@ApplicationScoped
+@RequestScoped
 public  class Logo_sin_fondo implements imagenes_index {
-    private String Ubicacion="./IMAGES/logo_sin_fondo.png";
+    private String Ubicacion="IMAGES/logo_sin_fondo.png";
     private String Descripcion="SILU";
-    private String Comentario="";
+    private String Comentario="fsjsffjj dsjndsfjdfsfdhj dfsdfssnvndfndf nkdfkfnfdnd";
     
     public Logo_sin_fondo() {
     // Si necesitas hacer algo en el constructor
